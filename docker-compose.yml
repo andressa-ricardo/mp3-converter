@@ -1,0 +1,9 @@
+services:
+  app:
+    build:
+      context: ./backend 
+      dockerfile: Dockerfile
+    volumes:
+      - ./backend/src:/app/src  
+    ports:
+      - "8000:8000"
