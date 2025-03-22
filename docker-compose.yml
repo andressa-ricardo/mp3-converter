@@ -5,5 +5,6 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./backend/src:/app/src  
+      - ~/Downloads:/root/Downloads 
     ports:
       - "8000:8000"
